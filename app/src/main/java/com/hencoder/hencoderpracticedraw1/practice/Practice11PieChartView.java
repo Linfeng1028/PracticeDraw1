@@ -31,6 +31,7 @@ public class Practice11PieChartView extends View {
 //        练习内容：使用各种 Canvas.drawXXX() 方法画饼图
         RectF rectF = new RectF(250,250, 650, 650);
         Paint paint = new Paint();
+
         paint.setColor(Color.YELLOW);
         canvas.drawArc(rectF, 0, -60, true, paint);
         paint.setColor(Color.GRAY);
@@ -45,5 +46,11 @@ public class Practice11PieChartView extends View {
         rectF = new RectF(240, 240, 640, 640);
         paint.setColor(Color.BLUE);
         canvas.drawArc(rectF, -180, 120, true, paint);
+
+        // 类似的，划线添加中文，这里只加一处作为示范
+        paint.setColor(Color.WHITE);
+        canvas.drawLines(new float[]{(float) (450 + 100 * Math.sqrt(3)), 350, 800, 350}, paint);
+        paint.setTextSize(30);
+        canvas.drawText("XXXXXX", 800, 350, paint);
     }
 }

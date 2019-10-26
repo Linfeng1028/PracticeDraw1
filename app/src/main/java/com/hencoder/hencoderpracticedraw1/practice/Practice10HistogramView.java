@@ -54,5 +54,7 @@ public class Practice10HistogramView extends View {
         canvas.drawText("L", 730, 630, paint);
         canvas.drawText("M", 850, 630, paint);
 
+        paint.setTextSize(50);
+        canvas.drawText("直方图", 500, 700, paint);
     }
 }
